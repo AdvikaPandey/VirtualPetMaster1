@@ -26,13 +26,14 @@ function draw() {
   if(keyWentDown(UP_ARROW)){
     writeStock(foodS);
     dog.addImage(happyDog);
-    
-    writeStock();
   }
 
   drawSprites();
   //add styles here
-  textSize = 25;
+  textSize(25);
+  fill("cyan");
+  stroke("black");
+  text("Food remaining: ",foodStock)
 
 
 }
